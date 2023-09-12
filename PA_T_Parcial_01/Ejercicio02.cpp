@@ -14,6 +14,7 @@ int Ejercicio02::rob(int houses[], int n)
     int* dp = (int*)malloc(sizeof(int) * n);
 
     dp[0] = houses[0];
+
     dp[1] = max(houses[0], houses[1]);
 
     for (int i = 2; i < n; i++) {
